@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(102, 92, 92);
+    background-image: linear-gradient(rgb(190, 183, 183), rgb(46, 43, 43));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.flex {
+    padding: 20px;
+    flex-basis: 48%;
+}
+input, button {
+    width: 75%;
+    height: 5vh;
+    min-height: 2.5em;
+    margin: 5px;
+    margin-left: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+input {
+    background-color: rgb(106, 222, 237);
+    color: rgb(31, 101, 110);
+}
+button, .button {
+    background-image: linear-gradient(rgb(24, 111, 122), rgb(6, 28, 31));
+    color: white;
+}
+table tr td:last-child, table tr td:first-child {
+    text-align: center;
+}
+table button {
+    width: 20px;
+    height: 20px;
+    min-height: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 10px;
+    margin: 0px;
+}
+button:hover, .button:hover {
+    background-image: linear-gradient(rgb(150, 50, 50), rgb(49, 14, 14));
+    box-shadow: 2px 2px 8px 0px white, -2px -2px 9px 0px white;
+}
+button:focus, .button:focus{
+    outline: none;
+}
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 8px 0px white, -2px -2px 9px 0px white;
+}
+#tznoedit {
+    background-color: rgb(120, 189, 198);
+    color: white;
+}
+.inactive {
+    background-image: linear-gradient(rgb(122, 163, 167), rgb(80, 96, 97));;
+    color: white;
+}
+#clearform {
+    display: none;
+}
+#getuser {
+    margin: 20px 0 30px 0;
+}
+#adduser {
+    margin-top: 60px;
+}
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(32, 145, 160), rgb(18, 80, 88));
+}
+th {
+    background-image: linear-gradient(rgb(24, 111, 122), rgb(12, 53, 58));
+}
+table th:nth-child(1) {
+    width: 5%
+}
+table th:nth-child(2) {
+    width: 10%
+}
+table th:nth-child(3) {
+    width: 10%
+}
+table th:nth-child(4) {
+    width: 25%
+}
+table th:nth-child(5) {
+    width: 10%
+}
+table th:nth-child(6) {
+    width: 20%
+}
+table th:nth-child(7) {
+    width: 5%
+}
+table tbody tr:hover td{
+    background-image: linear-gradient(rgb(223, 107, 107), rgb(116, 45, 45));
+}
+table tr:nth-child(even) {
+    background-image: linear-gradient(rgb(44, 190, 209), rgb(31, 128, 141));
+}
+table tfoot tr td{
+    background-image: linear-gradient(rgb(44, 190, 209), rgb(20, 97, 107));
+}
+@media (min-width: 900px) {
+    #container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .getall {
+        transform: translateY(40vh);
+    }
+    .button-clicked {
+        margin: 20px 0;
+        transform: translateY(0);
+        animation: moveup 0.5s linear 1;
+    }
+    @keyframes moveup {
+        0% {transform: translateY(40vh)}
+        100% {transform: translateY(0)}
+    }
+    #usertablediv {
+        margin-right: 50px;
+    }
+    th, td {
+     font-size: .9vw;
+    }
+}

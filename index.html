@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./client/css/style.css" />
+  <title>PHP</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="formsdiv" class="flex">
+      <div id="getuser">
+        <h2>Get a User</h2>
+        <input type="number" placeholder="Teudat Zeut" id="getUserTz">
+        <button class="button" onclick="getSingleUser()">Get a User</button>
+      </div>
+      <div id="adduser">
+        <form id="adduserform" method="POST" enctype="text/plain">
+          <h2 id="form-caption">Add a User</h2>
+          <input type="text" placeholder="First Name" id="first" name="first">
+          <input type="text" placeholder="Last Name" id="last" name="last">
+          <input type="email" placeholder="Email" id="email" name="email">
+          <input type="password" placeholder="Password" id="password" name="password">
+          <input type="number" placeholder="Teudat Zeut" id="tz" name="tz" maxlength="9">
+          <input type="date" placeholder="DOB" id="dob" name="dob">
+          <input type="submit" class="button" value="Add User" id="addusersubmit">
+          <input type="reset" class="button" id="clearform" value="Back to Add User" onclick="resetForm()">
+        </form>
+      </div>
+    </div>
+    <div id="usertablediv" class="flex">
+      <button class="button getall" id="getall" onclick="getAllUsers()">Get All Users</button>
+      <table id="usertable">
+      </table>
+    </div>
+  </div>
+  <script src="./client/js/main.js"></script>
+</body>
+
+</html>
